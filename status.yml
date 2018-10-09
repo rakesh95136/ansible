@@ -1,0 +1,6 @@
+---
+ - hosts: loadbalancer
+   become: true
+   tasks:
+    - name: nginx status
+      command: service nginx status warn=false
